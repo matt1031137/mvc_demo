@@ -1,3 +1,11 @@
+<?php
+/**
+ * @var string $title
+ * @var array<int, array{id:int, title:string, created_at:string}> $posts
+ */
+?>
+
+
 <h2><?= htmlspecialchars($title) ?></h2>
 
 <?php if (empty($posts)): ?>

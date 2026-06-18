@@ -1,3 +1,10 @@
+<?php
+/**
+ * @var string $content
+ */
+?>
+
+
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
