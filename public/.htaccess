@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# 如果請求的是真實存在的檔案或目錄(例如 css, js, 圖片), 直接放行
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 其他所有請求都導向 index.php, 並把原始路徑帶入 url 參數
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
