@@ -20,6 +20,7 @@
     //   $content = ob_get_clean();
     //   require __DIR__ . '/layout.php';
     // 本範例為求簡單, 直接在 Controller 用 $this->view() 渲染各自的 view, 不套用 layout
+    echo $content;
     ?>
 
 </body>
